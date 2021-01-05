@@ -1,0 +1,70 @@
+<html>
+<head>
+    <link rel=stylesheet type="text/css" href="resources/style.css" >
+	<title>The ELK Java API</title>
+</head>
+
+<body>
+<h1 align="center"><b>The ELK Java API</b></h1>
+<p>Include the <i>ElkKeyboards</i> jar file in your classpath and code your application in accordance with
+the following instructions.
+</p>
+<p>In order to process keyboard maps in Java applications, the first step is to establish the list of 
+<i>.keylayout</i> files that are available. The <i>KeyCodeLanguages</i> class provides this function. The  
+constructor is called with the URL that points to the directory containing these files. The <i>KeyCodeLanguages</i> 
+constructor finds the .keylayout files and the names of the languages to which they correspond. Next, 
+you determine which language you want to use. The <i>getKeyboardURL</i> method asks the user for a selection 
+and returns the URL to the appropriate .keylayout file. Having identified the .keylayout file, create 
+a <i>KeyboardHandler</i> object that will be able to properly listen to and process user keystrokes. Finally, 
+hook this handler to the JVM. The following code snippet illustrates this process.
+</p>
+
+<blockquote>
+       // default path to .keylayout file folder (true would be for .ttf files)<br>
+       URL  url = null;<br>
+       try { url = Status.getDefaultPath(false).toURI().toURL(); }<br>
+       catch (Exception e) {}<br><br>
+
+	   // Find all the .keylayout files and associated languages<br>
+       KeyLayoutLanguages dialog = new KeyLayoutLanguages(url); <br><br>
+
+	   // If .keylayout files exist, select one of the .keylayout entries<br>
+       if (dialog.isKeyLayouts()) url = dialog.getKeyboardURL(this, icon);<br>
+	   
+   	   // If no .keylayout files selected, exit program or add custom code<br>
+       if (url==null) { System.exit(0); }<br><br>
+
+	   // Import the keyboard map and create a handler to process it<br>
+       KeyboardHandler handler = new KeyboardHandler(url);<br><br>
+	   
+	   // Hook a KeyEventDispatcher to process the keyboard handler in the JVM<br>
+       handler.setJavaHook();<br><br>
+</blockquote>
+<p>The above snippet applies the keyboard map to all <i>JTextComponent</i> objects throughout the Java
+application. There is another alternative which is more selective. You might want to hook the keyboard 
+to specific application components. This can be done. Delete the last statement in the above snippet 
+and add the following whenever you want to connect a component to a keyboard map.</p>
+
+<blockquote>
+		// Get available languages<br>
+		String[] languages = dialog.getLanguages();<br><br>
+		
+		// Connect a component to the first language (Change index for the others)<br>
+		// Note: If you have a handler object from a previous call, specify it in the third argument<br>
+		KeyboardHandler handler = dialog.hookComponent(component, languages[0], null);<br>
+</blockquote>
+
+<p>To unhook the keymap from the JVM use the instruction:
+<blockquote>
+handler.releaseKeyboardHook();
+</blockquote>
+</p>
+<p>To unhook the keymap from a single component, use the instruction:
+<blockquote>
+dialog.unhookComponent(component, handler);
+</blockquote>
+
+Note: The unhook calls correspond to the method you use to hook. If you hook the handler to the JVM, use the first unhook procedure. On
+the other hand, if you hook handlers to specific components, use the second unhook approach.
+</body>
+</html>

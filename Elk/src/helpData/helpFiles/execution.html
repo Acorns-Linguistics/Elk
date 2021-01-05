@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel=stylesheet type="text/css" href="resources/style.css" >
+	<title>Using Keyboard Layouts</title>
+</head>
+
+<body>
+<h1 align="center"><b>Using Keybord Layouts</b></h1>
+
+<p>Once you have created a keyboard layout, you will want to install it so that it is available to application programs. Once installed and selected, 
+a keystroke listener application is able to monitor keys pressed and produce appropriate output. On MAC systems, this process is easy, because tbese 
+systems automatically make use of <i>.keylayout</i> files for defining keyboard layouts. Just click on MacintoshHD, navigate to the Library folder, and then to 
+the Keyboard Layouts folder. Put the desired <i>.keylayout</i> files into that folder.</p>
+
+<p>Windows Systems have a different default mechanism for keyboard layouts. These require a special Microsoft program to compile and create a keyboard 
+<i>dll</i> file. Another alternative is to create keyboards with a commercial program like that provided by Tavultesoft. The ELK project provides a third 
+alternative. Drop the <i>.keylayout</i> file into the <i>Documents/acornsFiles/keyLayoutFiles</i> folder. If that
+folder doesn't exict create the <i>Documents/Acorns/keyLayoutFiles</i> folder and drop them there.Then execute the <i>ElkKeyboards</i> application. 
+This program will allow you to select among the available keyboard layouts and alternate between them if you have more than one. It listens and modifies 
+keystrokes before they are received by Windows application programs, like Word or Notepad.</p>
+
+<p>If you are using ACORNS for language revitalization, it seamlessly utilize ELK keyboards and <i>.ttf</i> font files. In fact, 
+this was the original motivation for the ELK project. That is, we desire to use a single, XML-based way to describe keyboard layouts that will work on all 
+platforms. We also want users to be able to create web-based language lessons, and not require them install keylayouts or custom fonts on their local systems. 
+</p>
+
+<p>Note that although ACORNS and ELK runs on all platforms, the <i>ElkKeyboards</i> application, at this time, does not support UNIX-based systems. It is 
+not needed on Mac-based systems because keyboard layout support is already integrated into those operating systems.</p>
+
+</body>
+</html>

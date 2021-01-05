@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/map_1_0.dtd">
+
+<map version="1.0">
+
+<!-- web page targets -->
+
+  <mapID target="overview"         url="helpFiles/overview.html" />
+  <mapID target="generalOperation" url="helpFiles/generalOperation.html" />
+  <mapID target="keyboardSettings" url="helpFiles/keyboardSettings.html" />
+  <mapID target="deadKeys"         url="helpFiles/deadKeys.html" />
+  <mapID target="execution"        url="helpFiles/execution.html" />
+  <mapID target="api"              url="helpFiles/api.html" />
+
+<!-- icon targets -->
+
+  <mapID target="elk"   url="resources/elk.png" />
+  <mapID target="forward" url="resources/forward.gif" />
+  <mapID target="back"    url="resources/back.gif"  />
+  <mapID target="home"    url="resources/home.gif"  />
+  <mapID target="print"   url="resources/print.gif" />
+
+</map>

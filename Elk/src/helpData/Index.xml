@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 2.0//EN"
+         "http://java.sun.com/products/javahelp/index_2_0.dtd">
+
+<index version="2.0">
+     <indexitem text="Overview"           target="overview" />
+     <indexitem text="General Operation"  target="generalOperation" />
+     <indexitem text="Keyboard Settings"  target="keyboardSettings" />
+     <indexitem text="DeadKeys"           target="deadKeys" />
+     <indexitem text="Execution"          target="execution" />
+     <indexitem text="JAVA API"           target="api" />
+</index>

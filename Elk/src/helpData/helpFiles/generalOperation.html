@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel=stylesheet type="text/css" href="resources/style.css" >
+	<title>ELK General Operation</title>
+</head>
+
+<body>
+<h1 align="center"><b>ELK General Operation</b></h1>
+
+<div style="text-align:center"><img src="resources/buttonPanel.png" alt="Button Panel"/></div>
+
+<p>At the top of this page, you see a series of buttons that control how the Elk program works. When you move the 
+cursor over any of these buttons, you will see a short description of their purpose. Below the buttons is a label
+that extends the full width of the picture. This label will contain error messages encountered during the 
+program operation. Immediatel below the buttons are a label, a drop down menu, and a text field. These GUI components
+respectively contain the name of the active font family, the font size, and the name of the language to which
+the keyboard layout pertains. Under this is a preview line that displays characters from the selected font.</p>
+<P>We will now describe the operation of each of the control buttons in more detail.</p>
+
+<table align="center" border="1" cellspacing="5" cellpadding="5">
+<tr><td><img src="resources/reset.png"></td>
+    <td>This button will reset the Elk program to its initial state.</td>
+</tr>
+<tr><td><img src="resources/open.png"></td>
+    <td>When you click on this button, a dialog will open up to allow you to select a <i>.ttf</i> font file of your choice. You can also open 
+		a <i>.ttf</i> file by dragging the file from an open folder over the Elk application frame and then releasing the mouse.
+		<P>Once selected, Elk will display the font on the left of the display, and fill the virtual keyboard (on the right under the button 
+		panel) with default settings. You will 
+		also see the name of the font family in	a label with the title, &quot;Font:&quot; to the left and a preview of how the font looks.
+		If the font size is	to small (or too big), simply click on the down arrow by the size combo box and select a size that is more
+		appropriate.To alter the keyboard map, please refer to the <a href="keyboardSettings.html">Keyboard Maps</a> page.</p>
+	</td>
+</tr>
+<tr><td><img src="resources/save.png"></td>
+	<td>The save button to the left will create a <i>.ttf</i> file for you based on the font being displayed. In the dialog that
+	    appears, you select an appropriate folder name. The created file will reflect the keyboard mapping that you created using 
+		no modifiers and the shift modifier. You will need to enter a language in the text field shown under the help button. By
+		default, this name will be appended to the original <i>.ttf</i> file name, though you can override the name if you wish.<br><br>
+		To install fonts, you need to copy them to an appropriate system folder. On windows systems, the folder is c:\Windows\fonts.
+		On Mac systems, there are two alternatives. The first is the Fonts folder within the Library folder of you home directory. The
+		second is the Fonts folder within the global /System/Library folder.
+	</td>
+</tr>
+<tr><td><img src="resources/export.png"></td>
+	<td>After creating a keyboard mapping, you can click this button to export your key map to a <i>.keylayout</i> file. A dialog will 
+		appear to allow you to navigate to a folder and save the mapping.
+	</td>
+</tr>
+<tr><td><img src="resources/import.png"></td>
+	<td>The import button allows you to enter <i>.keylayout</i> files that contains pre-existing keyboard maps. The <i>.keylayout</i> files
+		are in XML and are popular on MAC systems where they are created using the UKELELE program. You can also open a <i>.keylayout</i> file 
+		by dragging the file from an open folder over the Elk application frame, and then releasing the mouse.
+        <p>The ELK program
+		allows you to access, modify, and create these files on any platform. The Elk Keyboard program enables Windows systems to utilize 
+		these layouts. ACORNS software can seamlessly use these files on all platforms, including Linux. After you import a <i>.keylayout</i> 
+		file, you will likely see a series of dead key sequences shown in the bottom panel of your display. Please refer to the 
+		<a href="deadKeys.html">Dead Key</a> page for  more information.
+	</td>
+</tr>
+<tr><td><img src="resources/help.png"></td>
+	<td>The help facility enables you to get information regarding operational aspects of the Elk software. This page  is part of that facility.
+	</td>
+</tr>
+</table>
+
+<p><b>Elk Dialogs</b>: The elk dialogs enable you to navigate to system folders and specify file names appropriate to the command. Initially 
+	these dialogs default to a default folder location, which is Documents/acornsFiles/keyLayoutFiles or Documents/Acorns on newer installations). You can navigate to 
+	different folders if you wish and elk will remember those locations on future executions. It remembers two folder locations. These are respectively, the folder containing <i>.ttf</i> files and the folder containing <i>.keylayout</i>files.
+</p>
+
+</body></html>

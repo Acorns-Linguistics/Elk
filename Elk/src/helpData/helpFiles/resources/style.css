@@ -1,0 +1,13 @@
+body      { font-family: Ariel, Helvetica, Sans-serif; 
+            color:black; background-color:#e0e0e0;}
+body.frame { font-family: Ariel, Helvetica, Sans-serif;
+             color:black; background-color:#f0f0f0;}
+             
+a         { font-family: Ariel, Helvetica, Sans-serif; }
+a:visited { font-family: Ariel, Helvetica, Sans-serif;  color:#800000; background-color:transparent; }
+a:link    { font-family: Ariel, Helvetica, Sans-serif; color:#0000ff; background-color:transparent; }
+a:active  { font-family: Ariel, Helvetica, Sans-serif; color:#800080; background-color:transparent; }
+.small    { font-family: "Courier New", Courier, mono, Monospace; font-size: 8pt; }
+
+h1  {text-align: center; }
+p.centered {text-align: center; }

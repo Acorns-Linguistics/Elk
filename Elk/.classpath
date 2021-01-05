@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="jhall.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danjh/OneDrive/Documents/development/2020/Libraries/AudioVisualFonts.jar" sourcepath="C:/Users/danjh/OneDrive/Documents/development/2020/Libraries/AudioVisualFontsSrc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
