@@ -7,6 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="jhall.jar"/>
-	<classpathentry kind="lib" path="C:/Users/danjh/OneDrive/Documents/development/2020/Libraries/AudioVisualFonts.jar" sourcepath="C:/Users/danjh/OneDrive/Documents/development/2020/Libraries/AudioVisualFontsSrc.jar"/>
+	<classpathentry kind="lib" path="AudioVisualFonts.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
